@@ -1,0 +1,157 @@
+body{
+    width: 100%;
+    align-items: center;
+    background-color:rgb(29, 26, 26);
+}
+.content{
+    width: 80%;
+    padding-left: 10%;
+    padding-right:10%;
+    background-color: #dddadd27;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.navbar h2{
+    font-size: 3.5rem;
+    color:#D95F59 ;
+}
+ul{
+        padding: 0px 15px;
+        border-radius: 20px;
+        border: 1px solid rgb(102, 96, 96);
+        
+        
+        
+}
+ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 15px;
+    font-size: 1.25rem;
+    
+    
+}
+
+ul li a{
+    color:white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+
+
+ul li a:hover,
+ul li a:focus,
+ul li a.list {
+    background-color: rgb(226, 49, 49);
+    color: rgb(231, 226, 226);
+    border-radius: 20px;
+    padding: 15px 20px ;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.text-div,
+.image-div {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: azure;
+    position: relative;
+}
+.text-div h1{
+    font-size: 3.2rem;
+}
+.image-header {
+    width: 100%;
+    height: auto;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #D95F59;
+    color: rgb(233, 237, 240);
+    border-radius: 14px;
+   
+}
+
+.image-box1{
+    width: 100px;
+    border: 1px solid white;
+    text-align: center;
+    background-color: rgb(116, 128, 128);
+    margin-right:10px;
+    border-radius: 10%;
+    position:absolute;
+    right: 0px;
+    top: 2px;
+}
+
+.image-box1 h2{
+    font-size: 2rem;
+}
+.image-box2{
+    border: 1px solid white;
+    width:200px;
+    text-align: center;
+    background-color: rgba(169, 169, 169, 0.363);
+    color: white;
+    border-radius: 10%;
+}
+.child-box{
+    width: 30px;
+    height: 30px;
+    background-color:red;
+    border-radius: 50%;
+    align-items: center;
+    align-self: start;
+    position: absolute;
+    left: 20px;
+    bottom: 40px;
+}
+
+.image-box2 h2{
+    font-size: 2.3rem;
+}
+
+.image-box2 p{
+    font-size: 1.25rem;
+}
+/* Media 2uery for larger screens */
+@media (min-width: 768px) {
+    .section1 {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .text-div,
+    .image-div {
+        width: 45%;
+        /* Adjust this width as needed */
+        margin-bottom: 0;
+    }
+
+    .text-div {
+        text-align: left;
+    }
+
+    .image-div {
+        text-align: right;
+    }
+}
+
+
