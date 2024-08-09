@@ -16,18 +16,15 @@ body{
     
 }
 .navbar h2{
-    font-size: 3.5rem;
+    font-size: 5.5rem;
     color:#D95F59 ;
 }
-ul{
+ .navbar ul{
         padding: 0px 15px;
         border-radius: 20px;
-        border: 1px solid rgb(102, 96, 96);
-        
-        
-        
+        border: 1px solid rgb(102, 96, 96);      
 }
-ul li{
+.navbar ul li{
     list-style-type: none;
     display: inline-block;
     padding: 15px;
@@ -36,7 +33,7 @@ ul li{
     
 }
 
-ul li a{
+.navbar ul li a{
     color:white;
     text-decoration: none;
     font-weight: 500;
@@ -45,14 +42,17 @@ ul li a{
 
 
 
-ul li a:hover,
-ul li a:focus,
-ul li a.list {
+
+.navbar ul li a:hover,
+.navbar ul li a:focus,
+.navbar ul li a.list {
     background-color: rgb(226, 49, 49);
     color: rgb(231, 226, 226);
     border-radius: 20px;
     padding: 15px 20px ;
 }
+
+/*section 1 style  */
 
 .section1 {
     display: flex;
@@ -72,6 +72,12 @@ ul li a.list {
 }
 .text-div h1{
     font-size: 3.2rem;
+}
+.text-div h1 span{
+    color: #D95F59;
+    font-style: oblique;
+    font-size: 3.75rem;
+    
 }
 .image-header {
     width: 100%;
@@ -134,7 +140,11 @@ button {
 
 
 /* main aitem  style */
-
+.main-box1 {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
 .text-box{
     text-align: center;
     padding-top: 20px;
@@ -148,17 +158,185 @@ button {
 .text-box p{
     color: wheat;
 }
+
+.main-image{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 3%;
+    
+}
+
+.main-image img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.main-image h3{
+    color: white;
+    text-align: center;
+    font-size: 2.23rem;
+}
+.main-image p{
+    color: aliceblue;
+    font-size: 1rem;
+}
+
+.main-box2{
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #dddadd27; 
+    padding-top: 20px;
+}
+
+.box-class{
+    background-color: #fff;
+    border-radius: 2%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.main-text h3{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 2.24rem;
+
+}
+.main-text p{
+    color:gray;
+}
+.run img{
+    width: 100%;
+    height: auto;
+    margin-top: 19px;
+    margin-bottom: 20px;
+    border-radius: 5%;
+}
+
+/*section 03  */
+.class3 h1{
+    text-align: center;
+    font-size: 4.25rem;
+    color: #fff;
+}
+.class3 p{
+    text-align: center;
+    color: gray;
+}
+.content-image{
+    background-color: #dddadd27;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 2%;
+}
+.images-box{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    padding-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.image1 img{
+    width: 100%;
+    height:90%;
+    gap: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    
+}
+.image1{
+    position: relative;
+}
+
+.image1 h5{
+    position:absolute;
+    font-size:1.35rem ;
+    bottom: 35px;
+    color: white;
+    left: 10px;
+}
+
+.image1 p{
+    position: absolute;
+    color: #7FA1C3;
+    bottom: 25px;
+    left: 10px;
+}
+
+/*   footer box style */
+
+.footer-box{
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 20px;
+}
+
+.footer-class{
+    text-align: center;
+}
+
+.footer-class h2{
+    color: #A02334;
+    font-size: 3.25rem;
+}
+.footer-class p{
+    color: #758694;
+    font-size: 1.5rem;
+}
+
+.footer-text{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.text-footer1 h3{
+    color:white ;
+    font-size: 3rem;
+}
+.footer-list{
+    list-style: none;
+    padding: 0;
+    font-size: 1.75rem;
+}
+.footer-list li{
+    margin: 5px 0;
+}
+
+.footer-list li a{
+    color: #758694;
+    text-decoration: none;
+}
+
+hr{
+    border:1px solid #444;
+    margin: 20px 0;
+}
+.footer-4{
+    font-size: 1.50rem;
+    margin-top: 20px;
+    text-align: center;
+    color: #758694;
+}
+
+
+
 /* Media 2uery for larger screens */
 @media (min-width: 768px) {
-    .section1 {
+    .section1,
+    .main-box1,
+    .box-class {
         flex-direction: row;
         justify-content: space-between;
     }
 
     .text-div,
-    .image-div {
+    .image-div,
+    .main-text {
         width: 45%;
-        /* Adjust this width as needed */
         margin-bottom: 0;
     }
 
@@ -168,6 +346,14 @@ button {
 
     .image-div {
         text-align: right;
+    }
+    .run{
+        width: 45%;
+    }
+
+    .footer-box > div >div{
+        width: 45%;
+        margin: 2.5%;
     }
 }
 
